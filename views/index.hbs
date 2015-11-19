@@ -14,13 +14,31 @@
 	<title>Socket Chat</title>
 </head>
 <body>
-	<h1>Hello World</h1>
+
+	<!-- form to send a new msg -->
+	<form role="form" action="" id="send-msg" class="form-inline">
+		<div class="form-group">
+			<input type="text" id="username" placeholder="Username" class="form-control" autofocus required>
+		</div>
+		<div class="form-group">
+			<input type="text" id="new-msg" placeholder="Your message" class="form-control" autofocus required>
+		</div>
+		<div class="form-group">
+			<input type="submit" class="btn btn-default" value="Send">
+		</div>
+	</form>
+
+	<!-- list of messages -->
+	<ul id="messages"></ul>
 
 	<!-- jquery -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 
 	<!-- bootstrap js -->
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- socket.io -->
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
 	
 	<!-- custom script -->
 	<script type="text/javascript" src="main.js"></script>
